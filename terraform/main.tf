@@ -13,7 +13,7 @@ provider "aws" {
     region = var.region
 }
 resource "aws_instance" "servernode" {
-    ami = "ami-0b8558308efa5fb9d"
+    ami = "ami-08eb150f611ca277f"
     instance_type = "t2.micro"
     key_name = aws_key_pair.deployer.key_name
     vpc_security_group_ids = [aws_security_group.maingroup.id]
